@@ -29,8 +29,8 @@ def generate_random(X0, a, c, m, n, alpha):
     edf = np.arange(1, n + 1) / n
     cdf_uniform = edf - sorted_numbers
     te = []
-    for i in range(10):
-        te.append(sorted_numbers[i]- (i/10))
+    for i in range(n):
+        te.append(sorted_numbers[i]- (i/n))
 
     max_edf = max(cdf_uniform)
     max_te = max(te)
